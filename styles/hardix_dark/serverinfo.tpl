@@ -79,37 +79,37 @@ SERVER_REFRESH_ICON
 </style>
 
   <table class="InfoFrame_Table">
-  <tr><td class="Label">Server Name:</td><td>%%SERVER_ICON_SCALED%%
+  <tr><td class="label" style="font-weight: bold;">Server Name:</td><td>%%SERVER_ICON_SCALED%%
     &nbsp;
     <a href="channelid://0" class="TextMessage_ServerLink">%%SERVER_NAME%%</a></td></tr>
-  <tr><td class="label">Server Nicknames:</td><td><b>%%?SERVER_NICKNAMES%%<b></td></tr>
-  <tr><td class="label">Version:</td><td>%%SERVER_VERSION_SHORT%% on <img src="styles:/hardix_dark/media/%%SERVER_PLATFORM%%.png" alt="" title="%%SERVER_PLATFORM%%" /></td></tr>
+  <tr><td class="label" style="font-weight: bold;">Server Nicknames:</td><td><b>%%?SERVER_NICKNAMES%%<b></td></tr>
+  <tr><td class="label" style="font-weight: bold;">Version:</td><td>%%SERVER_VERSION_SHORT%% on <img src="styles:/hardix_dark/media/%%SERVER_PLATFORM%%.png" alt="" title="%%SERVER_PLATFORM%%" /></td></tr>
   <tr>
-    <td class="label">%%TR_SERVER_ADDRESS%%:</td>
+    <td class="label" style="font-weight: bold;">%%TR_SERVER_ADDRESS%%:</td>
     <td>
 		%%SERVER_ADDRESS%%
 		:%%?SERVER_PORT%%
 	  </td>
 	</tr>
-  <tr><td class="label">License:</td><td>%%SERVER_LICENSE%%</td></tr>
-  <tr><td class="label">Uptime:</td><td>%%SERVER_UPTIME%%</td></tr>
+  <tr><td class="label" style="font-weight: bold;">License:</td><td>%%SERVER_LICENSE%%</td></tr>
+  <tr><td class="label" style="font-weight: bold;">Uptime:</td><td>%%SERVER_UPTIME%%</td></tr>
 	<hr>
-	<tr><td class="Label">Server UUID:</td><td>%%SERVER_UNIQUE_ID%%</td></tr>
-	<tr><td class="Label">ID:</td><td>%%SERVER_ID%%</td></tr>
+	<tr><td class="Label" style="font-weight: bold;">Server UUID:</td><td>%%SERVER_UNIQUE_ID%%</td></tr>
+	<tr><td class="Label" style="font-weight: bold;">ID:</td><td>%%SERVER_ID%%</td></tr>
 	<hr>
-  <tr><td class="label">Current Channels:</td><td>%%SERVER_CHANNELS_ONLINE%%</td></tr>
+  <tr><td class="label" style="font-weight: bold;">Current Channels:</td><td>%%SERVER_CHANNELS_ONLINE%%</td></tr>
   <tr title="Total Client Connections: %%SERVER_CLIENT_CONNECTIONS%%">
-    <td class="label">Current Clients:</td>
+    <td class="label" style="font-weight: bold;">Current Clients:</td>
     <td>%%SERVER_CLIENTS_ONLINE%% / %%SERVER_MAXCLIENTS%% %%?SERVER_NO_RESERVED_SLOTS%%</td>
     <td>%%SERVER_CLIENTS_ONLINE%% / %%SERVER_MAXCLIENTS%% (<span class="red">-%%?SERVER_RESERVED_SLOTS%% reserved</span>)</td>
   </tr>
   <tr title="Total ServerQuery Connections: %%SERVER_QUERY_CLIENT_CONNECTIONS%%">
-    <td class="label">Current Queries:</td>
+    <td class="label" style="font-weight: bold;">Current Queries:</td>
     <td>%%SERVER_QUERYCLIENTS_ONLINE%% / %%SERVER_MAXCLIENTS%%</td>
   </tr>
   %%?PLUGIN_INFO_DATA%%
-	<tr><td class="Label">%%TR_SERVER_CLIENT_CONNECTIONS%%:</td><td>%%SERVER_CLIENT_CONNECTIONS%%</td></tr>
-	<tr><td class="Label">Total Query Connections:</td><td>%%SERVER_QUERY_CLIENT_CONNECTIONS%%</td></tr>
+	<tr><td class="label" style="font-weight: bold;">%%TR_SERVER_CLIENT_CONNECTIONS%%:</td><td>%%SERVER_CLIENT_CONNECTIONS%%</td></tr>
+	<tr><td class="label" style="font-weight: bold;">Total Query Connections:</td><td>%%SERVER_QUERY_CLIENT_CONNECTIONS%%</td></tr>
 </table>
 <br>
 <table id="list">
