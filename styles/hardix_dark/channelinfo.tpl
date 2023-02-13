@@ -80,35 +80,38 @@ FILE_BROWSER_ICON
   .red {
     color: red;
   }
+  .purple {
+    color: #907BEA;
+  }
   .small {
     font-size: 7pt;
   }
 </style>
 
 <table id="info">
-    <td class="label">Name: </td>
+    <td class="label" style="font-weight: bold">Name: </td>
     <td dir="LTR">
       <a href="channelid://%%CHANNEL_ID%%" class="TextMessage_ChannelLink" style="text-decoration: none; font-weight: bold; color: #5B34C9;">%%CHANNEL_ICON_SCALED%% %%CHANNEL_NAME%%</a>&nbsp;
     </td>
-  <tr><td class="label">Full Name:</td><td>%%CHANNEL_NAME_PLAIN%%</td></tr>
-  <tr><td class="label">Topic:</td><td>%%?CHANNEL_TOPIC%%</td></tr>
-  <tr><td class="Label">Channel ID/Order:</td><td>%%CHANNEL_ID%% / %%CHANNEL_ORDER%%</td></tr>
+  <tr><td class="label" style="font-weight: bold">Full Name:</td><td>%%CHANNEL_NAME_PLAIN%%</td></tr>
+  <tr><td class="label" style="font-weight: bold">Topic:</td><td>%%?CHANNEL_TOPIC%%</td></tr>
+  <tr><td class="Label" style="font-weight: bold">Channel ID/Order:</td><td>%%CHANNEL_ID%% / %%CHANNEL_ORDER%%</td></tr>
   <tr>
-    <td class="label">Codec:</td>
+    <td class="label" style="font-weight: bold">Codec:</td>
     <td>
       %%CHANNEL_CODEC%%
       &nbsp;<img src="styles:/hardix_dark/media/encrypted_12x12.png" alt="%%?CHANNEL_VOICE_DATA_ENCRYPTED_FLAG%%" />
     </td>
   </tr>
   <tr>
-    <td class="label">Codec Quality:</td>
+    <td class="label" style="font-weight: bold">Codec Quality:</td>
     <td>%%CHANNEL_CODEC_QUALITY%% (estimated bitrate: %%CHANNEL_CODEC_BITRATE%%/s)</td>
   </tr>
-  <tr><td class="label">Type:</td><td class="blue">%%?CHANNEL_FLAGS%%</td></tr>
-  <tr><td class="label">Current Clients:</td><td>%%?CHANNEL_CLIENTS_COUNT%% / %%CHANNEL_FLAG_MAXCLIENTS%%</td></tr>
-  <tr><td class="label">Needed Talk Power:</td><td class="red"><img src="iconpath:MODERATED" height="16" width="16" alt="" title="Request Talk Power to be able to talk in this Channel." />&nbsp;&nbsp;%%?CHANNEL_NEEDED_TALK_POWER%%</td></tr>
+  <tr><td class="label" style="font-weight: bold">Type:</td><td class="blue">%%?CHANNEL_FLAGS%%</td></tr>
+  <tr><td class="label" style="font-weight: bold">Current Clients:</td><td>%%?CHANNEL_CLIENTS_COUNT%% / %%CHANNEL_FLAG_MAXCLIENTS%%</td></tr>
+  <tr><td class="label" style="font-weight: bold">Needed Talk Power:</td><td class="purple" style="color: #907BEA;"><img src="iconpath:MODERATED" height="16" width="16" alt="" title="Request Talk Power to be able to talk in this Channel." />&nbsp;&nbsp;%%?CHANNEL_NEEDED_TALK_POWER%%</td></tr>
   <tr>
-    <td class="label">Subscription Status:</td>
+    <td class="label" style="font-weight: bold">Subscription Status:</td>
     <td>%%CHANNEL_SUBSCRIPTION%%</td>
   </tr>
   <tr><td>
@@ -123,5 +126,5 @@ FILE_BROWSER_ICON
 <p style="margin-top: 4px; color:darkRed;">Channel will be deleted in %%?TEMP_CHANNEL_TIME_TO_DELETE%%.</p>
 
 <table id="list" width=100%>
-  <tr><td class="space label"><img src="gfx:hardix_dark/change_nickname.svg" height="16" width="16" alt=""> Description:</td></tr><tr><td class="list"><br />%%?CHANNEL_DESCRIPTION%%</td></tr>
+  <tr><td class="space label" style="font-weight: bold"><img src="gfx:hardix_dark/change_nickname.svg" height="16" width="16" alt=""> Description:</td></tr><tr><td class="list"><br />%%?CHANNEL_DESCRIPTION%%</td></tr>
 </table>
